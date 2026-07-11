@@ -74,9 +74,6 @@ Visit `http://localhost:5000` to view experiment tracking.
 ```bash
 uvicorn src.app:app --reload --host 0.0.0.0 --port 8000
 ```
-
-API Documentation: `http://localhost:8000/docs`
-
 ### 5. Test the API
 
 ```bash
@@ -104,6 +101,9 @@ curl -X POST "http://localhost:8000/predict" \
 ### Models Trained
 - **Logistic Regression**: Baseline model for interpretability
 - **Random Forest**: Ensemble model for better performance
+- **XgBoot**: Ensemble model for better performance
+- **SVM**: SVM model for binary classification
+
 
 ### Evaluation Metrics
 - Accuracy
