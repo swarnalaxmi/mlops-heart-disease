@@ -28,7 +28,7 @@ logger.setLevel(logging.INFO)
 logger.addHandler(handler)
 logger.propagate = False
 
-# Load model and preprocessor
+# Load model and preprocessor paths
 MODEL_PATH = Path(__file__).parent.parent / "models" / "best_model.pkl"
 PREPROCESSOR_PATH = Path(__file__).parent.parent / "models" / "preprocessor.pkl"
 
@@ -100,19 +100,27 @@ class PrometheusMetricsMiddleware:
 
 
 async def load_model_on_startup():
-    """Load model and preprocessor on startup."""
+    """Load model and preprocessor safely on startup."""
     global model, preprocessor
     try:
         if MODEL_PATH.exists():
             model = joblib.load(MODEL_PATH)
             logger.info(f"Model loaded from {MODEL_PATH}")
             model_loaded_gauge.set(1)
+        else:
+            logger.warning(f"Model file not found at {MODEL_PATH}")
+            model_loaded_gauge.set(0)
+
         if PREPROCESSOR_PATH.exists():
             preprocessor = joblib.load(PREPROCESSOR_PATH)
             logger.info(f"Preprocessor loaded from {PREPROCESSOR_PATH}")
-        model_info_gauge.labels(model_name="best_model", model_version="1.0.0").set(1)
+        else:
+            logger.warning(f"Preprocessor file not found at {PREPROCESSOR_PATH}")
+
+        model_info_gauge.labels(model_name="best_model", model_version="1.0.0").set(1 if model else 0)
     except Exception as e:
         logger.error(f"Error loading model: {e}")
+        model_loaded_gauge.set(0)
 
 
 def validate_prediction_input(data: dict) -> List:
@@ -181,7 +189,6 @@ async def predict(request: Request):
             "ca", "thal"
         ]
         features_df = pd.DataFrame([validated_values], columns=feature_names)
-
         features_processed = preprocessor.transform(features_df)
 
         prediction = model.predict(features_processed)[0]
