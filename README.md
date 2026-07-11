@@ -50,6 +50,14 @@ pip install -r requirements.txt
 
 ### 2. Download Dataset & Train Model
 
+EDA: notebooks\01_EDA.ipynb
+This does:
+- Histograms
+- Correlation heatmaps
+- Class distribution plots
+- Missing value analysis
+- Feature relationship analysis
+
 ```bash
 python src/model_trainer.py
 ```
@@ -57,7 +65,8 @@ python src/model_trainer.py
 This will:
 - Download the Heart Disease UCI Dataset
 - Preprocess the data (handle missing values, scale features)
-- Train Logistic Regression and Random Forest models
+- Train Logistic Regression, Random Forest models, XGBoost, SVM models
+- With hyperparamter tuning using GridSearchCV, RandomizedSearchCV
 - Log experiments to MLflow
 - Save the best model and preprocessor
 
@@ -68,6 +77,21 @@ mlflow ui
 ```
 
 Visit `http://localhost:5000` to view experiment tracking.
+
+MLflow helps track:
+• Experiments
+• Parameters
+• Metrics
+• Model versions
+• Artifacts
+This ensures reproducibility and proper experiment management.
+
+LOGS:
+• Model parameters
+• Accuracy metrics
+• ROC curves/plots
+• Confusion matrix
+• Saved models
 
 ### 4. Run FastAPI Server
 
@@ -119,6 +143,8 @@ All experiments are logged to MLflow including:
 - Trained model artifacts
 - Cross-validation scores
 
+Run python -m mlflow ui in post 5000
+
 ## Containerization
 
 ### Build Docker Image
@@ -134,6 +160,7 @@ docker run -p 8000:8000 heart-disease-api:latest
 ```
 
 Test: `curl http://localhost:8000/health`
+Test: `curl http://localhost:8000/metrics`
 
 ## Kubernetes Deployment
 
@@ -149,6 +176,8 @@ docker build -t heart-disease-api:latest .
 # Apply Kubernetes manifests
 kubectl apply -f k8s/deployment.yaml
 kubectl apply -f k8s/service.yaml
+kubectl apply -f k8s/grafana.yaml
+kubectl apply -f k8s/prometheus.yaml
 
 # Check deployment status
 kubectl get pods
@@ -270,13 +299,20 @@ Response:
 - API request logging
 - Health check endpoint
 - Error handling and reporting
+- docker pull grafana/grafana:latest
+- Grafana: http://localhost:30030/d/f60ca858-2fbf-4625-9eb3-bd7db99da881/heart-disease-api-metrics?orgId=1&from=now-5m&to=now&timezone=browser
+- Prometheus: http://localhost:30090/graph?g0.expr=heart_disease_api_requests_created&g0.tab=1&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1h
+- Prometheus targets: http://localhost:30090/targets?search=
+
+## CI CD
+- Git Actions: act -j build-docker
 
 ## Tech Stack
 
 | Component | Technology |
 |-----------|-----------|
 | Language | Python 3.11 |
-| ML Framework | Scikit-learn, XGBoost |
+| ML Framework | Scikit-learn, XGBoost, SVM, RandomForest |
 | API Framework | FastAPI |
 | Experiment Tracking | MLflow |
 | Containerization | Docker |
@@ -284,12 +320,51 @@ Response:
 | CI/CD | GitHub Actions |
 | Testing | Pytest |
 | Code Quality | Black, Flake8 |
+| Monitoring | Grafana, Prometheus |
 
 ## Performance
 
 ### Model Metrics (Test Set)
-- **Logistic Regression**: ~82% accuracy
-- **Random Forest**: ~86% accuracy
+| ============================================================
+| FINAL EVALUATION - ALL MODELS
+| ============================================================
+|
+| Baseline Models:
+|
+| LogisticRegression_Baseline Test Metrics:
+|   accuracy_test: 0.8333
+|   precision_test: 0.8462
+|   recall_test: 0.7857
+|   f1_test: 0.8148
+|   roc_auc_test: 0.9498
+|
+| RandomForest_Baseline Test Metrics:
+|   accuracy_test: 0.8667
+|   precision_test: 0.8846
+|   recall_test: 0.8214
+|   f1_test: 0.8519
+|   roc_auc_test: 0.9347
+|
+| SVM_Baseline Test Metrics:
+|   accuracy_test: 0.8500
+|   precision_test: 0.8800
+|   recall_test: 0.7857
+|   f1_test: 0.8302
+|   roc_auc_test: 0.9554
+|
+| XGBoost_Baseline Test Metrics:
+|   accuracy_test: 0.8667
+|   precision_test: 0.8846
+|   recall_test: 0.8214
+|   f1_test: 0.8519
+|   roc_auc_test: 0.8917
+| Preprocessor saved to models/preprocessor.pkl
+| Feature names saved to models/preprocessor.features.json
+|
+| ============================================================
+| Training pipeline completed successfully!
+| Best model: LogisticRegression_Grid
+
 
 ### API Response Time
 - Average: <100ms
@@ -304,20 +379,10 @@ All components are designed for reproducibility:
 4. MLflow logs all experiment parameters
 5. Docker container runs identically everywhere
 
-## Future Improvements
-
-- [ ] Add data drift detection
-- [ ] Implement model explainability (SHAP)
-- [ ] Add Prometheus + Grafana monitoring
-- [ ] Implement feature store
-- [ ] Add A/B testing framework
-- [ ] Integrate with cloud platforms (AWS/GCP/Azure)
-- [ ] Add model retraining automation
-- [ ] Implement feature importance tracking
 
 ## Authors
 
-- Student ID: AIMLCZG523
+- Student ID: 2024ac05599@wilp.bits-pilani.ac.in
 
 ## License
 
