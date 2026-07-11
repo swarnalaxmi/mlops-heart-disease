@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/b0c1c403507e416c9eb8c15d8ce63933/artifacts
+end_time: 1783764560563
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: b0c1c403507e416c9eb8c15d8ce63933
+run_name: gifted-wolf-910
+run_uuid: b0c1c403507e416c9eb8c15d8ce63933
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783764560211
+status: 3
+tags: []
+user_id: atven

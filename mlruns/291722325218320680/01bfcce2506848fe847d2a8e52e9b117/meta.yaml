@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/01bfcce2506848fe847d2a8e52e9b117/artifacts
+end_time: 1783784794153
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 01bfcce2506848fe847d2a8e52e9b117
+run_name: stylish-ape-55
+run_uuid: 01bfcce2506848fe847d2a8e52e9b117
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783784791181
+status: 3
+tags: []
+user_id: root

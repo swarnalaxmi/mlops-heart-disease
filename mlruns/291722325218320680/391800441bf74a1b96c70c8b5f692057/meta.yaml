@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/391800441bf74a1b96c70c8b5f692057/artifacts
+end_time: 1783783816016
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 391800441bf74a1b96c70c8b5f692057
+run_name: capricious-tern-149
+run_uuid: 391800441bf74a1b96c70c8b5f692057
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783783814596
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/40bc5d33974c4029968eca467790f873/artifacts
+end_time: 1783764978683
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 40bc5d33974c4029968eca467790f873
+run_name: useful-conch-238
+run_uuid: 40bc5d33974c4029968eca467790f873
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783764978364
+status: 3
+tags: []
+user_id: atven

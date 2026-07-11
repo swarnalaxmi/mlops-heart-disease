@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/47e5631f3c894560a91b09159319b725/artifacts
+end_time: 1783761858309
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 47e5631f3c894560a91b09159319b725
+run_name: calm-loon-478
+run_uuid: 47e5631f3c894560a91b09159319b725
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783761857868
+status: 3
+tags: []
+user_id: atven

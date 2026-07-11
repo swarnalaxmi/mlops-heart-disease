@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/583024ef6f6d4064a8888c2e9456100e/artifacts
+end_time: 1783762314850
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 583024ef6f6d4064a8888c2e9456100e
+run_name: powerful-worm-393
+run_uuid: 583024ef6f6d4064a8888c2e9456100e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783762314409
+status: 3
+tags: []
+user_id: atven

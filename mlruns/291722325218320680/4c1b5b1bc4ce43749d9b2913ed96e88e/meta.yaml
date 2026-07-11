@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/4c1b5b1bc4ce43749d9b2913ed96e88e/artifacts
+end_time: 1783762778928
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 4c1b5b1bc4ce43749d9b2913ed96e88e
+run_name: sneaky-shoat-703
+run_uuid: 4c1b5b1bc4ce43749d9b2913ed96e88e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783762778540
+status: 3
+tags: []
+user_id: atven

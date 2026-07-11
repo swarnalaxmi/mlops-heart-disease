@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/0179b9300c58473aac0d1858d8d0039b/artifacts
+end_time: 1783774123578
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 0179b9300c58473aac0d1858d8d0039b
+run_name: rogue-pug-286
+run_uuid: 0179b9300c58473aac0d1858d8d0039b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783774117956
+status: 3
+tags: []
+user_id: root

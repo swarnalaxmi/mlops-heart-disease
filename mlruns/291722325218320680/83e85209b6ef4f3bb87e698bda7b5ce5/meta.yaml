@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/83e85209b6ef4f3bb87e698bda7b5ce5/artifacts
+end_time: 1783774094813
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 83e85209b6ef4f3bb87e698bda7b5ce5
+run_name: calm-crane-185
+run_uuid: 83e85209b6ef4f3bb87e698bda7b5ce5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783774092900
+status: 3
+tags: []
+user_id: root

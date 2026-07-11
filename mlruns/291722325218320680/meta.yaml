@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680
+creation_time: 1783761409691
+experiment_id: '291722325218320680'
+last_update_time: 1783761409691
+lifecycle_stage: active
+name: heart-disease-prediction

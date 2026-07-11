@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/5c511ab721454ed783d8050968234c42/artifacts
+end_time: 1783763838122
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 5c511ab721454ed783d8050968234c42
+run_name: XGBoost_GridSearch
+run_uuid: 5c511ab721454ed783d8050968234c42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783763834709
+status: 3
+tags: []
+user_id: atven

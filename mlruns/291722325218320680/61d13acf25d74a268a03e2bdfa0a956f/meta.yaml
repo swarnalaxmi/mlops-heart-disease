@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/61d13acf25d74a268a03e2bdfa0a956f/artifacts
+end_time: 1783765002417
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 61d13acf25d74a268a03e2bdfa0a956f
+run_name: puzzled-cow-41
+run_uuid: 61d13acf25d74a268a03e2bdfa0a956f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783765002029
+status: 3
+tags: []
+user_id: atven

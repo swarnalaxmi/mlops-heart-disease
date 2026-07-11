@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/8c517058dcc64f5bac9539f63a68749e/artifacts
+end_time: 1783763825057
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 8c517058dcc64f5bac9539f63a68749e
+run_name: mysterious-stoat-304
+run_uuid: 8c517058dcc64f5bac9539f63a68749e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783763824669
+status: 3
+tags: []
+user_id: atven

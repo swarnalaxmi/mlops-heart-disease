@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/bea53744b6e0467f80c0e4df78dc72bc/artifacts
+end_time: 1783776798606
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: bea53744b6e0467f80c0e4df78dc72bc
+run_name: brawny-donkey-47
+run_uuid: bea53744b6e0467f80c0e4df78dc72bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783776797498
+status: 3
+tags: []
+user_id: root

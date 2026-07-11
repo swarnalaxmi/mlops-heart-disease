@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/d55b8b0c91364d5b9758b44e6f9dffff/artifacts
+end_time: 1783777594867
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: d55b8b0c91364d5b9758b44e6f9dffff
+run_name: hilarious-skunk-720
+run_uuid: d55b8b0c91364d5b9758b44e6f9dffff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783777594135
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/507eaf4c9a174d16bda1b1f4a50ed194/artifacts
+end_time: 1783783845773
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 507eaf4c9a174d16bda1b1f4a50ed194
+run_name: RandomForest_RandomSearch
+run_uuid: 507eaf4c9a174d16bda1b1f4a50ed194
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783783837619
+status: 3
+tags: []
+user_id: root

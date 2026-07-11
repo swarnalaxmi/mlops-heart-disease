@@ -1,0 +1,283 @@
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/_internal/_fields.py:132: UserWarning: Field "model_server_url" in MlflowModelServingConfig has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/_internal/_config.py:341: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+Dataset downloaded and saved to data/heart_disease.csv
+Dataset shape: (303, 14)
+Missing values before:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          4
+thal        2
+target      0
+dtype: int64
+Missing values after: 0
+Training set size: (237, 13)
+Test set size: (60, 13)
+
+============================================================
+TRAINING BASELINE MODELS
+============================================================
+
+Training LogisticRegression...
+
+Performing 5-fold cross-validation for LogisticRegression...
+  accuracy: 0.8136 (+/- 0.0831)
+  precision: 0.7945 (+/- 0.0742)
+  recall: 0.7961 (+/- 0.1456)
+  f1: 0.7916 (+/- 0.1052)
+  roc_auc: 0.8734 (+/- 0.0901)
+LogisticRegression training metrics: {'accuracy_train': 0.8523206751054853, 'precision_train': 0.8425925925925926, 'recall_train': 0.8348623853211009, 'f1_train': 0.8387096774193548, 'roc_auc_train': 0.9119839449541285}
+
+Training RandomForest...
+
+Performing 5-fold cross-validation for RandomForest...
+  accuracy: 0.8096 (+/- 0.0655)
+  precision: 0.8172 (+/- 0.0539)
+  recall: 0.7506 (+/- 0.1227)
+  f1: 0.7792 (+/- 0.0879)
+  roc_auc: 0.8913 (+/- 0.0501)
+RandomForest training metrics: {'accuracy_train': 1.0, 'precision_train': 1.0, 'recall_train': 1.0, 'f1_train': 1.0, 'roc_auc_train': 1.0}
+
+Training SVM...
+
+Performing 5-fold cross-validation for SVM...
+  accuracy: 0.8094 (+/- 0.0911)
+  precision: 0.8039 (+/- 0.0706)
+  recall: 0.7589 (+/- 0.1738)
+  f1: 0.7755 (+/- 0.1278)
+  roc_auc: 0.8693 (+/- 0.0876)
+SVM training metrics: {'accuracy_train': 0.9029535864978903, 'precision_train': 0.9134615384615384, 'recall_train': 0.8715596330275229, 'f1_train': 0.892018779342723, 'roc_auc_train': 0.9560636467889909}
+
+Training XGBoost...
+
+Performing 5-fold cross-validation for XGBoost...
+  accuracy: 0.8011 (+/- 0.0741)
+  precision: 0.7771 (+/- 0.0543)
+  recall: 0.7879 (+/- 0.1362)
+  f1: 0.7795 (+/- 0.0937)
+  roc_auc: 0.8822 (+/- 0.0768)
+XGBoost training metrics: {'accuracy_train': 1.0, 'precision_train': 1.0, 'recall_train': 1.0, 'f1_train': 1.0, 'roc_auc_train': 1.0}
+
+============================================================
+HYPERPARAMETER TUNING
+============================================================
+
+==================================================
+GridSearchCV Hyperparameter Tuning: LogisticRegression
+==================================================
+Fitting 5 folds for each of 36 candidates, totalling 180 fits
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/sklearn/model_selection/_search.py:307: UserWarning: The total space of parameters 12 is smaller than n_iter=20. Running 12 iterations. For exhaustive searches, use GridSearchCV.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:15: UserWarning: Distutils was imported before Setuptools, but importing Setuptools also replaces the `distutils` module in `sys.modules`. This may lead to undesirable behaviors or errors. To avoid these issues, avoid using distutils directly, ensure that setuptools is installed in the traditional way (e.g. not an editable install), and/or make sure that setuptools is always imported before distutils.
+  warnings.warn(
+/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+Best parameters: {'C': 0.01, 'max_iter': 500, 'solver': 'lbfgs'}
+Best CV ROC-AUC score: 0.8899
+
+LogisticRegression_Grid_Tuned Test Metrics:
+  accuracy_test: 0.8667
+  precision_test: 0.8846
+  recall_test: 0.8214
+  f1_test: 0.8519
+  roc_auc_test: 0.9487
+
+==================================================
+RandomizedSearchCV Hyperparameter Tuning: LogisticRegression
+==================================================
+Fitting 5 folds for each of 20 candidates, totalling 100 fits
+
+Best parameters: {'solver': 'lbfgs', 'max_iter': 500, 'C': 0.01}
+Best CV ROC-AUC score: 0.8899
+
+LogisticRegression_Random_Tuned Test Metrics:
+  accuracy_test: 0.8667
+  precision_test: 0.8846
+  recall_test: 0.8214
+  f1_test: 0.8519
+  roc_auc_test: 0.9487
+
+==================================================
+GridSearchCV Hyperparameter Tuning: RandomForest
+==================================================
+Fitting 5 folds for each of 162 candidates, totalling 810 fits
+
+Best parameters: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 4, 'min_samples_split': 2, 'n_estimators': 50}
+Best CV ROC-AUC score: 0.9061
+
+RandomForest_Grid_Tuned Test Metrics:
+  accuracy_test: 0.8333
+  precision_test: 0.8750
+  recall_test: 0.7500
+  f1_test: 0.8077
+  roc_auc_test: 0.9453
+
+==================================================
+RandomizedSearchCV Hyperparameter Tuning: RandomForest
+==================================================
+Fitting 5 folds for each of 20 candidates, totalling 100 fits
+
+Best parameters: {'n_estimators': 300, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'log2', 'max_depth': 30}
+Best CV ROC-AUC score: 0.9053
+
+RandomForest_Random_Tuned Test Metrics:
+  accuracy_test: 0.8500
+  precision_test: 0.8800
+  recall_test: 0.7857
+  f1_test: 0.8302
+  roc_auc_test: 0.9487
+
+==================================================
+GridSearchCV Hyperparameter Tuning: SVM
+==================================================
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+
+Best parameters: {'C': 0.1, 'gamma': 'scale', 'kernel': 'rbf'}
+Best CV ROC-AUC score: 0.8823
+
+SVM_Grid_Tuned Test Metrics:
+  accuracy_test: 0.8667
+  precision_test: 0.9167
+  recall_test: 0.7857
+  f1_test: 0.8462
+  roc_auc_test: 0.9487
+
+==================================================
+RandomizedSearchCV Hyperparameter Tuning: SVM
+==================================================
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+
+Best parameters: {'kernel': 'rbf', 'gamma': 'scale', 'C': 0.1}
+Best CV ROC-AUC score: 0.8823
+
+SVM_Random_Tuned Test Metrics:
+  accuracy_test: 0.8667
+  precision_test: 0.9167
+  recall_test: 0.7857
+  f1_test: 0.8462
+  roc_auc_test: 0.9487
+
+==================================================
+GridSearchCV Hyperparameter Tuning: XGBoost
+==================================================
+Fitting 5 folds for each of 81 candidates, totalling 405 fits
+
+Best parameters: {'learning_rate': 0.1, 'max_depth': 3, 'n_estimators': 50, 'subsample': 0.7}
+Best CV ROC-AUC score: 0.8863
+
+XGBoost_Grid_Tuned Test Metrics:
+  accuracy_test: 0.8500
+  precision_test: 0.8800
+  recall_test: 0.7857
+  f1_test: 0.8302
+  roc_auc_test: 0.9208
+
+==================================================
+RandomizedSearchCV Hyperparameter Tuning: XGBoost
+==================================================
+Fitting 5 folds for each of 20 candidates, totalling 100 fits
+
+Best parameters: {'subsample': 0.7, 'n_estimators': 50, 'max_depth': 7, 'learning_rate': 0.1}
+Best CV ROC-AUC score: 0.8851
+
+XGBoost_Random_Tuned Test Metrics:
+  accuracy_test: 0.8667
+  precision_test: 0.8846
+  recall_test: 0.8214
+  f1_test: 0.8519
+  roc_auc_test: 0.9252
+
+============================================================
+FINAL EVALUATION - ALL MODELS
+============================================================
+
+Baseline Models:
+
+LogisticRegression_Baseline Test Metrics:
+  accuracy_test: 0.8333
+  precision_test: 0.8462
+  recall_test: 0.7857
+  f1_test: 0.8148
+  roc_auc_test: 0.9498
+
+RandomForest_Baseline Test Metrics:
+  accuracy_test: 0.8667
+  precision_test: 0.8846
+  recall_test: 0.8214
+  f1_test: 0.8519
+  roc_auc_test: 0.9347
+
+SVM_Baseline Test Metrics:
+  accuracy_test: 0.8500
+  precision_test: 0.8800
+  recall_test: 0.7857
+  f1_test: 0.8302
+  roc_auc_test: 0.9554
+
+XGBoost_Baseline Test Metrics:
+  accuracy_test: 0.8667
+  precision_test: 0.8846
+  recall_test: 0.8214
+  f1_test: 0.8519
+  roc_auc_test: 0.8917
+Preprocessor saved to models/preprocessor.pkl
+Feature names saved to models/preprocessor.features.json
+
+============================================================
+Training pipeline completed successfully!
+Best model: LogisticRegression_Grid
+============================================================

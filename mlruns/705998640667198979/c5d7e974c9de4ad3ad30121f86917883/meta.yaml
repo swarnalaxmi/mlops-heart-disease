@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/705998640667198979/c5d7e974c9de4ad3ad30121f86917883/artifacts
+end_time: 1783783747892
+entry_point_name: ''
+experiment_id: '705998640667198979'
+lifecycle_stage: active
+run_id: c5d7e974c9de4ad3ad30121f86917883
+run_name: LogisticRegression
+run_uuid: c5d7e974c9de4ad3ad30121f86917883
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783783739595
+status: 3
+tags: []
+user_id: root

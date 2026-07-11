@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/61db3a7ca31f40e4b8f3d0bb5e8e3114/artifacts
+end_time: 1783777597751
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 61db3a7ca31f40e4b8f3d0bb5e8e3114
+run_name: worried-turtle-563
+run_uuid: 61db3a7ca31f40e4b8f3d0bb5e8e3114
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783777596926
+status: 3
+tags: []
+user_id: root

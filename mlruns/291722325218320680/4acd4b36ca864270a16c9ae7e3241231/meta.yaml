@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/4acd4b36ca864270a16c9ae7e3241231/artifacts
+end_time: 1783784850350
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 4acd4b36ca864270a16c9ae7e3241231
+run_name: peaceful-hog-243
+run_uuid: 4acd4b36ca864270a16c9ae7e3241231
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783784847811
+status: 3
+tags: []
+user_id: root

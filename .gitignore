@@ -32,10 +32,6 @@ env/
 *.swo
 *~
 
-# MLflow
-mlruns/
-mlflow.db
-
 
 # Jupyter
 .ipynb_checkpoints/
@@ -54,6 +50,3 @@ Thumbs.db
 .coverage
 htmlcov/
 
-# Logs
-*.log
-logs/

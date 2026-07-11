@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/561c86f1829a4418be060e4dcec7dd30/artifacts
+end_time: 1783783847796
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 561c86f1829a4418be060e4dcec7dd30
+run_name: righteous-ray-740
+run_uuid: 561c86f1829a4418be060e4dcec7dd30
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783783846048
+status: 3
+tags: []
+user_id: root

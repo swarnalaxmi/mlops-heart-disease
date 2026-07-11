@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/f7cdba97386e409f8157409b5c2751c9/artifacts
+end_time: 1783764558330
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: f7cdba97386e409f8157409b5c2751c9
+run_name: mysterious-kite-914
+run_uuid: f7cdba97386e409f8157409b5c2751c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783764557955
+status: 3
+tags: []
+user_id: atven

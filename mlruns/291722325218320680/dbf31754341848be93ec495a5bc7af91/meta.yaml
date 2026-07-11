@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/dbf31754341848be93ec495a5bc7af91/artifacts
+end_time: 1783783837554
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: dbf31754341848be93ec495a5bc7af91
+run_name: beautiful-crane-553
+run_uuid: dbf31754341848be93ec495a5bc7af91
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783783836103
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,38 @@
+src/app.py:3:1: F401 'json' imported but unused
+src/app.py:11:1: F401 'numpy as np' imported but unused
+src/app.py:249:48: W292 no newline at end of file
+src/config.py:3:1: F401 'os' imported but unused
+src/inference.py:6:1: F401 'typing.Dict' imported but unused
+src/inference.py:43:1: W293 blank line contains whitespace
+src/inference.py:46:1: W293 blank line contains whitespace
+src/inference.py:65:1: W293 blank line contains whitespace
+src/inference.py:68:1: W293 blank line contains whitespace
+src/model_trainer.py:5:1: F401 'sklearn.model_selection.cross_val_score' imported but unused
+src/model_trainer.py:9:1: F401 'sklearn.metrics.confusion_matrix' imported but unused
+src/model_trainer.py:9:128: E501 line too long (170 > 127 characters)
+src/model_trainer.py:14:1: F401 'json' imported but unused
+src/model_trainer.py:103:1: W293 blank line contains whitespace
+src/model_trainer.py:107:1: W293 blank line contains whitespace
+src/model_trainer.py:109:1: W293 blank line contains whitespace
+src/model_trainer.py:121:1: W293 blank line contains whitespace
+src/model_trainer.py:202:1: W293 blank line contains whitespace
+src/model_trainer.py:264:1: W293 blank line contains whitespace
+src/model_trainer.py:340:1: W293 blank line contains whitespace
+src/model_trainer.py:344:1: W293 blank line contains whitespace
+src/model_trainer.py:354:1: W293 blank line contains whitespace
+tests/test_app.py:121:47: W292 no newline at end of file
+tests/test_data_processor.py:11:1: E402 module level import not at top of file
+tests/test_data_processor.py:47:1: W293 blank line contains whitespace
+tests/test_data_processor.py:49:1: W293 blank line contains whitespace
+tests/test_data_processor.py:56:1: W293 blank line contains whitespace
+tests/test_data_processor.py:65:1: W293 blank line contains whitespace
+tests/test_inference.py:25:13: F401 'inference.ModelPredictor' imported but unused
+tests/test_inference.py:26:1: W293 blank line contains whitespace
+tests/test_inference.py:29:1: W293 blank line contains whitespace
+tests/test_model_trainer.py:10:1: E402 module level import not at top of file
+2     E402 module level import not at top of file
+1     E501 line too long (170 > 127 characters)
+8     F401 'json' imported but unused
+2     W292 no newline at end of file
+19    W293 blank line contains whitespace
+32

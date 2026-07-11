@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/f051f576468a44d88bc2fdf92d01ea62/artifacts
+end_time: 1783765395310
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: f051f576468a44d88bc2fdf92d01ea62
+run_name: polite-turtle-824
+run_uuid: f051f576468a44d88bc2fdf92d01ea62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783765394182
+status: 3
+tags: []
+user_id: atven

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/4fe00c13750748ab8efa56f8f81e0c38/artifacts
+end_time: 1783765280936
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 4fe00c13750748ab8efa56f8f81e0c38
+run_name: merciful-auk-923
+run_uuid: 4fe00c13750748ab8efa56f8f81e0c38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783765279813
+status: 3
+tags: []
+user_id: atven

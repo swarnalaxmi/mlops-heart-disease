@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/06c97a3d79e94a219e4eb9a0821e97ea/artifacts
+end_time: 1783783884732
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 06c97a3d79e94a219e4eb9a0821e97ea
+run_name: thoughtful-fly-260
+run_uuid: 06c97a3d79e94a219e4eb9a0821e97ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783783878847
+status: 3
+tags: []
+user_id: root

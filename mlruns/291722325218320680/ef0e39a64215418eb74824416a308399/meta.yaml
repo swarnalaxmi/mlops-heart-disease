@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/ef0e39a64215418eb74824416a308399/artifacts
+end_time: 1783762355756
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: ef0e39a64215418eb74824416a308399
+run_name: rogue-shrew-931
+run_uuid: ef0e39a64215418eb74824416a308399
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783762353386
+status: 3
+tags: []
+user_id: atven

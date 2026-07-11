@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/be926fa27a82467e884c06dfed3e622d/artifacts
+end_time: 1783777619814
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: be926fa27a82467e884c06dfed3e622d
+run_name: colorful-donkey-24
+run_uuid: be926fa27a82467e884c06dfed3e622d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783777616053
+status: 3
+tags: []
+user_id: root

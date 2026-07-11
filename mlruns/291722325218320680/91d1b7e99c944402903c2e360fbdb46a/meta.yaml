@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/atven/mlops-heart-disease/mlruns/291722325218320680/91d1b7e99c944402903c2e360fbdb46a/artifacts
+end_time: 1783784403031
+entry_point_name: ''
+experiment_id: '291722325218320680'
+lifecycle_stage: active
+run_id: 91d1b7e99c944402903c2e360fbdb46a
+run_name: respected-fish-585
+run_uuid: 91d1b7e99c944402903c2e360fbdb46a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1783784397132
+status: 3
+tags: []
+user_id: root

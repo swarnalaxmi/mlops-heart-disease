@@ -1,0 +1,123 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-7.4.0, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.11.15/x64/bin/python
+cachedir: .pytest_cache
+rootdir: /mnt/c/Users/atven/mlops-heart-disease
+plugins: cov-4.1.0, anyio-3.7.1
+collecting ... collected 13 items
+
+tests/test_app.py::test_root_endpoint PASSED                             [  7%]
+tests/test_app.py::test_health_check_endpoint PASSED                     [ 15%]
+tests/test_app.py::test_metrics_endpoint PASSED                          [ 23%]
+tests/test_app.py::test_predict_success PASSED                           [ 30%]
+tests/test_app.py::test_predict_missing_fields PASSED                    [ 38%]
+tests/test_app.py::test_predict_invalid_data_types PASSED                [ 46%]
+tests/test_app.py::test_predict_model_not_loaded PASSED                  [ 53%]
+tests/test_data_processor.py::TestDataProcessor::test_handle_missing_values PASSED [ 61%]
+tests/test_data_processor.py::TestDataProcessor::test_preprocess_data PASSED [ 69%]
+tests/test_data_processor.py::TestDataProcessor::test_feature_columns_set PASSED [ 76%]
+tests/test_inference.py::TestInference::test_inference_import PASSED     [ 84%]
+tests/test_inference.py::TestInference::test_sample_prediction_shape PASSED [ 92%]
+tests/test_model_trainer.py::test_train_model_on_synthetic_data PASSED   [100%]
+
+=============================== warnings summary ===============================
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/utils/requirements_utils.py:20
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/utils/requirements_utils.py:20: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    import pkg_resources  # noqa: TID251
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:3147
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pkg_resources/__init__.py:3147: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+  Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+    declare_namespace(pkg)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:63
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:63: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("cohere_api_key", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:72
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:72: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("ai21labs_api_key", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:82
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:82: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("mosaicml_api_key", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:113
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:113: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("openai_api_key", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:168
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:168: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("anthropic_api_key", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:177
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:177: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("palm_api_key", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/_internal/_fields.py:132
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/_internal/_fields.py:132: UserWarning: Field "model_server_url" in MlflowModelServingConfig has conflict with protected namespace "model_".
+  
+  You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+    warnings.warn(
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:282
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:282: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("provider", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:303
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:303: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("config", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:320
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:320: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("name")
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:330
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:330: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("model", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:341
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:341: PydanticDeprecatedSince20: Pydantic V1 style `@root_validator` validators are deprecated. You should migrate to Pydantic V2 style `@model_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @root_validator(skip_on_failure=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:363
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/mlflow/gateway/config.py:363: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    @validator("route_type", pre=True)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/_internal/_config.py:291
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/_internal/_config.py:291: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+
+../../../../../opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/_internal/_config.py:341
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/pydantic/_internal/_config.py:341: UserWarning: Valid config keys have changed in V2:
+  * 'schema_extra' has been renamed to 'json_schema_extra'
+    warnings.warn(message, UserWarning)
+
+tests/test_app.py::test_root_endpoint
+tests/test_app.py::test_health_check_endpoint
+tests/test_app.py::test_metrics_endpoint
+tests/test_app.py::test_predict_success
+tests/test_app.py::test_predict_missing_fields
+tests/test_app.py::test_predict_invalid_data_types
+tests/test_app.py::test_predict_model_not_loaded
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/httpx/_client.py:690: DeprecationWarning: The 'app' shortcut is now deprecated. Use the explicit style 'transport=WSGITransport(app=...)' instead.
+    warnings.warn(message, DeprecationWarning)
+
+tests/test_model_trainer.py::test_train_model_on_synthetic_data
+  /opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/importlib/__init__.py:126: DeprecationWarning: The distutils package is deprecated and slated for removal in Python 3.12. Use setuptools or check PEP 632 for potential alternatives
+    return _bootstrap._gcd_import(name[level:], package, level)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+---------- coverage: platform linux, python 3.11.15-final-0 ----------
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/app.py                117     26    78%
+src/config.py              25     25     0%
+src/data_processor.py     108     61    44%
+src/inference.py           44     33    25%
+src/model_trainer.py      226    135    40%
+-------------------------------------------
+TOTAL                     520    280    46%
+Coverage XML written to file coverage.xml
+
+======================= 13 passed, 25 warnings in 18.22s =======================
