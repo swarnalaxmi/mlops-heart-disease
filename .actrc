@@ -1,0 +1,6 @@
+--privileged
+-v /var/run/docker.sock:/var/run/docker.sock
+-P ubuntu-latest=catthehacker/ubuntu:act-latest
+--bind
+--pull=false
+--artifact-server-path ./act-artifacts
