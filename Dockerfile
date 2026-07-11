@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Install Python dependencies with higher timeout and retries
+RUN pip install --default-timeout=1000 --retries=10 --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY src/ ./src/
