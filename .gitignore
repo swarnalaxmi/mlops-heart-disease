@@ -36,16 +36,6 @@ env/
 mlruns/
 mlflow.db
 
-# Data
-data/*.csv
-data/raw/
-data/processed/
-
-# Models
-models/*.pkl
-models/*.joblib
-models/*.pt
-models/*.pth
 
 # Jupyter
 .ipynb_checkpoints/
